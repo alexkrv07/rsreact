@@ -21,7 +21,7 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: ['tsconfig.json'],
+    // project: ['./tsconfig.json'],
   },
   root: true,
   plugins: [
@@ -31,12 +31,12 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
-    // 'prettier/prettier': [
-    //   'error',
-    //   {
-    //     'endOfLine': 'auto',
-    //   }
-    // ],
+    'prettier/prettier': [
+      'error',
+      {
+        'endOfLine': 'auto',
+      }
+    ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'quotes': ['error', 'single'],
